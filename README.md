@@ -1,5 +1,3 @@
-Aqui está uma versão aprimorada da descrição do README para o repositório:
-
 ---
 
 # Pizzaria_POO_II
@@ -57,5 +55,3 @@ O sistema visa cobrir todas as operações de uma pizzaria, incluindo:
 - **Warley Ostaque**
 
 ---
-
-Esse README oferece uma visão completa do projeto, descrevendo as funcionalidades, tecnologias usadas e os passos para configuração e execução do sistema.
