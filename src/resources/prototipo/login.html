@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Grande Pizzaria Artesanal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #a42828; /* Vermelho */
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #080868; /* Azul */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        .login-form {
+            display: inline-block;
+            text-align: left;
+            background-color: #f2f2f2; /* Cor suave diferenciando do branco */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        .login-form h2 {
+            margin-bottom: 20px;
+            color: #080868; /* Azul escuro para harmonizar com o sistema */
+            text-align: center;
+            font-size: 24px;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-form input[type="submit"] {
+            background-color: #28a745; /* Verde para o botão de entrar */
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #218838; /* Sombra para o botão ao passar o mouse */
+        }
+        footer {
+            background-color: #a42828; /* Vermelho */
+            padding: 10px;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="imagens/logo.jpeg" width="210" height="210">
+    <h1>Casa Grande Pizzaria Artesanal</h1>
+</header>
+<nav>
+    <a href="telainicial.html">Tela inicial</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="promocoes.html">Promoções</a>
+    <a href="lancamentos.html">Lançamentos</a>
+    <a href="sobre.html">Sobre nós</a>
+</nav>
+<main>
+    <form class="login-form" action="login_success.html" method="POST">
+        <h2>Entrar na sua conta</h2>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+
+        <input type="submit" value="Entrar">
+    </form>
+</main>
+<footer>
+    <div class="social-icons">
+        <!-- Aqui estão os ícones das redes sociais -->
+        <img src="imagens/tiktok.png" alt="Ícone do TikTok">
+        <img src="imagens/instagram.jpg" alt="Ícone do Instagram">
+        <img src="imagens/facebook.jpg" alt="Ícone do Facebook">
+        <img src="imagens/youtube.jpg" alt="Ícone do YouTube">
+    </div>
+    <p>Serviço disponível nas áreas de entrega Casa Grande Pizzaria Artesanal, todos os dias, de acordo com o horário de funcionamento de cada loja. A Pizzaria Coma Bem se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. Imagens meramente ilustrativas. Em caso de dúvidas, consulte nosso SAC: <a href="email:relacionamentopizzaria@gmail.com">relacionamentopizzaria@gmail.com</a>.</p>
+    <p>Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.</p>
+    <p>Casa Grande Pizzaria Artesanal, Av. dos Estudantes, 290 - Bloco 2 , Góias/GO</p>
+    <p>S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: <a href="email:casagrandepizzariaartesanal@gmail.com.br">casagrandepizzariaartesanal@gmail.com.br</a></p>
+</footer>
+</body>
+</html>
