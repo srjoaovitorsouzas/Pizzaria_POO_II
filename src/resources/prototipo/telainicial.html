@@ -3,106 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Grande Pizzaria Artesanal</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #000;
-        }
-        header {
-            background-color: #a42828; /* Vermelho */
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            color: #fff;
-            font-size: 36px;
-            margin: 0;
-        }
-        nav {
-            background-color: #080868; /* Azul */
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-        }
-        main {
-            text-align: center;
-            padding: 20px;
-        }
-        .banner {
-            background-image: url('imagens/baner.png');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-        }
-        .banner h2 {
-            font-size: 48px;
-            margin: 0;
-        }
-        .cta {
-            margin-top: 30px;
-            text-align: center;
-        }
-        .cta a {
-            background-color: #28a745;
-            color: #fff;
-            padding: 15px 30px;
-            font-size: 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .cta a:hover {
-            background-color: #218838;
-        }
-        .content-section {
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-        .content-section h3 {
-            font-size: 28px;
-            color: #a42828;
-        }
-        .content-section p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .promo-section, .about-section {
-            padding: 40px 20px;
-        }
-        footer {
-            background-color: #a42828; /* Vermelho */
-            padding: 20px;
-            text-align: center;
-        }
-        footer p, footer a {
-            color: #fff;
-            font-size: 14px;
-            text-decoration: none;
-        }
-        footer .social-icons img {
-            width: 30px;
-            margin-right: 10px;
-        }
-    </style>
+    <title>Tela Inicial - Casa Grande Pizzaria Artesanal</title>
+    <link rel="icon" href="imagens/logo.jpeg" type="logo">
+</head>
+
+<style>
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #000;
+    }
+    header {
+        background-color: #a42828;
+        padding: 10px;
+        text-align: center;
+    }
+    nav {
+        background-color: #080868;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    main {
+        text-align: center;
+        padding: 20px;
+    }
+    .history {
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    .history h2 {
+        color: #a42828;
+        font-size: 28px;
+    }
+    .history p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    footer {
+        background-color: #a42828;
+        padding: 10px;
+        text-align: center;
+    }
+    .social-icons {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .social-icons img {
+        width: 30px;
+        margin-right: 10px;
+    }
+    header h1 {
+        color: #fff;
+        font-size: 36px;
+        margin: 0;
+    }
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+    .banner h2 {
+        font-size: 48px;
+        margin: 0;
+    }
+    .cta {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .cta a {
+        background-color: #080868;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .cta a:hover {
+        background-color: #a42828;
+    }
+    .content-section {
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+    .content-section h3 {
+        font-size: 28px;
+        color: #a42828;
+    }
+    .content-section p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+    }
+    .promo-section, .about-section, .card-section {
+        padding: 40px 20px;
+    }
+    footer p, footer a {
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    footer .social-icons img {
+        width: 30px;
+        margin-right: 10px;
+    }
+    .linha-colorida {
+    color: #080868;
+  }
+</style>
 </head>
 <body>
 <header>
-    <img src="imagens/logo.jpeg" width="210" height="210" alt="Logo da Casa Grande Pizzaria Artesanal">
+    <img  class src="imagens/logo.jpeg" width="210" height="210">
     <h1>Casa Grande Pizzaria Artesanal</h1>
 </header>
 <nav>
@@ -114,15 +150,19 @@
 </nav>
 <main>
     <div class="banner">
-        <h2>Descubra o Verdadeiro Sabor Artesanal!</h2>
+        <img src="imagens/baner.png" alt="Banner">
     </div>
 
-    <div class="cta">
-        <a href="cardapio.html">Explore o Nosso Cardápio</a>
-    </div>
+    <section class="card-section">
+        <h3 class="linha-colorida">Cardápio</h3>
+        <p>Confira todas as opções do nosso cardápio! Clique e confira.</p>
+        <div class="cta">
+            <a href="cardapio.html">Explore o Nosso Cardápio</a>
+        </div>
+    </section>
 
     <section class="promo-section">
-        <h3>Pizzas em Promoção</h3>
+        <h3 class="linha-colorida">Pizzas em Promoção</h3>
         <p>Aproveite nossas pizzas com descontos exclusivos! Clique e confira.</p>
         <div class="cta">
             <a href="promocoes.html">Ver Promoções</a>
@@ -130,26 +170,23 @@
     </section>
 
     <section class="about-section">
-        <h3>Sobre Nós</h3>
-        <p>Desde 1985, a Casa Grande Pizzaria Artesanal é sinônimo de tradição e sabor. Venha conhecer nossa história e descubra por que somos a escolha certa para quem aprecia uma pizza autêntica e feita com amor.</p>
+        <h3 class="linha-colorida">Sobre Nós</h3>
+        <p>Desde 1985, a Casa Grande Pizzaria Artesanal é sinônimo de tradição e sabor. Venha conhecer nossa história e descubra por que somos a escolha certa para quem aprecia uma pizza autêntica e feita com amor! Clique e confira.</p>
         <div class="cta">
             <a href="sobre.html">Conheça Nossa História</a>
         </div>
     </section>
-
 </main>
 <footer>
     <div class="social-icons">
-        <!-- Aqui estão os ícones das redes sociais -->
         <img src="imagens/tiktok.png" alt="Ícone do TikTok">
         <img src="imagens/instagram.jpg" alt="Ícone do Instagram">
         <img src="imagens/facebook.jpg" alt="Ícone do Facebook">
         <img src="imagens/youtube.jpg" alt="Ícone do YouTube">
-    </div>
-    <p>Serviço disponível nas áreas de entrega Casa Grande Pizzaria Artesanal, todos os dias, de acordo com o horário de funcionamento de cada loja. A Pizzaria Coma Bem se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. Imagens meramente ilustrativas. Em caso de dúvidas, consulte nosso SAC: <a href="mailto:relacionamentopizzaria@gmail.com">relacionamentopizzaria@gmail.com</a>.</p>
-    <p>Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.</p>
-    <p>Casa Grande Pizzaria Artesanal, Av. dos Estudantes, 290 - Bloco 2 , Góias/GO</p>
-    <p>S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: <a href="mailto:casagrandepizzariaartesanal@gmail.com.br">casagrandepizzariaartesanal@gmail.com.br</a></p>
+        <p>Serviço disponível nas áreas de entrega Casa Grande Pizzaria Artesanal, todos os dias, de acordo com o horário de funcionamento de cada loja. A Pizzaria Coma Bem se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. Imagens meramente ilustrativas. Em caso de dúvidas, consulte nosso SAC: <a href="email:relacionamentopizzaria@gmail.com">relacionamentopizzaria@gmail.com</a>.</p>
+        <p>Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.</p>
+        <p>Casa Grande Pizzaria Artesanal, Av. dos Estudantes, 290 - Bloco 2 , Góias/GO</p>
+        <p>S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: <a href="email:casagrandepizzariaartesanal@gmail.com.br">casagrandepizzariaartesanal@gmail.com.br</a></p>
 </footer>
 </body>
 </html>
