@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Grande Pizzaria Artesanal</title>
+    <title>Login - Casa Grande Pizzaria Artesanal </title>
+    <link rel="icon" href="imagens/logo.jpeg" type="logo">
     <style>
         body {
             margin: 0;
@@ -74,6 +75,19 @@
         .login-form input[type="submit"]:hover {
             background-color: #218838; /* Sombra para o botão ao passar o mouse */
         }
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .register-link a {
+            color: #080868; /* Azul para link */
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
         footer {
             background-color: #a42828; /* Vermelho */
             padding: 10px;
@@ -111,6 +125,11 @@
         <input type="password" id="password" name="password" required placeholder="Digite sua senha">
 
         <input type="submit" value="Entrar">
+
+        <!-- Link para cadastro -->
+        <div class="register-link">
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+        </div>
     </form>
 </main>
 <footer>

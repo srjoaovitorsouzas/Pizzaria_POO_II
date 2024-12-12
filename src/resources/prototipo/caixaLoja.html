@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa da Loja - Casa Grande Pizzaria Artesanal</title>
+    <link rel="icon" href="imagens/logo.jpeg" type="logo">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #a42828; /* Vermelho */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #fff;
+            font-size: 36px;
+            margin: 0;
+        }
+        nav {
+            background-color: #080868; /* Azul */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cta {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .cta a {
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta a:hover {
+            background-color: #218838;
+        }
+        .content-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .content-section h3 {
+            font-size: 28px;
+            color: #a42828;
+        }
+        .content-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .promo-section, .about-section {
+            padding: 40px 20px;
+        }
+        footer {
+            background-color: #a42828; /* Vermelho */
+            padding: 20px;
+            text-align: center;
+        }
+        footer p, footer a {
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        footer .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .product-table, .report {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #a42828;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        table th {
+            background-color: #a42828;
+            color: #fff;
+        }
+        .pending {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .paid {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .edit-icon {
+            cursor: pointer;
+            margin-left: 10px;
+            color: #ffc107;
+        }
+        .edit-icon:hover {
+            color: #e0a800;
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="imagens/logo.jpeg" width="210" height="210" alt="Logo da Casa Grande Pizzaria Artesanal">
+    <h1>Casa Grande Pizzaria Artesanal</h1>
+</header>
+<nav>
+    <a href="login.html">Login</a>
+    <a href="telainicial.html">Tela inicial</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="promocoes.html">Promoções</a>
+    <a href="lancamentos.html">Lançamentos</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="financeiro.html">Financeiro</a>
+</nav>
+<main>
+    <div class="product-table">
+        <h2>Produtos Disponíveis</h2>
+        <table id="product-table">
+            <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço Unitário</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Produtos carregados dinamicamente -->
+            </tbody>
+        </table>
+        <h3>Adicionar Produto</h3>
+        <input type="text" id="new-product-name" placeholder="Nome do Produto">
+        <input type="number" id="new-product-price" placeholder="Preço Unitário (R$)" step="0.01">
+        <button onclick="addProduct()">Adicionar</button>
+    </div>
+
+    <div class="report">
+        <h2>Pedidos Realizados</h2>
+        <label for="customer">Mesa/Cliente:</label>
+        <input type="text" id="customer" placeholder="Número da Mesa ou Nome do Cliente">
+
+        <table id="orders-table">
+            <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Total</th>
+                <th>Forma de Pagamento</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Pedidos adicionados dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+</main>
+<footer>
+    <div class="social-icons">
+        <!-- Aqui estão os ícones das redes sociais -->
+        <img src="imagens/tiktok.png" alt="Ícone do TikTok">
+        <img src="imagens/instagram.jpg" alt="Ícone do Instagram">
+        <img src="imagens/facebook.jpg" alt="Ícone do Facebook">
+        <img src="imagens/youtube.jpg" alt="Ícone do YouTube">
+    </div>
+    <p>Serviço disponível nas áreas de entrega Casa Grande Pizzaria Artesanal, todos os dias, de acordo com o horário de funcionamento de cada loja. A Pizzaria Coma Bem se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. Imagens meramente ilustrativas. Em caso de dúvidas, consulte nosso SAC: <a href="email:relacionamentopizzaria@gmail.com">relacionamentopizzaria@gmail.com</a>.</p>
+    <p>Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.</p>
+    <p>Casa Grande Pizzaria Artesanal, Av. dos Estudantes, 290 - Bloco 2 , Góias/GO</p>
+    <p>S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: <a href="email:casagrandepizzariaartesanal@gmail.com.br">casagrandepizzariaartesanal@gmail.com.br</a></p>
+</footer>
+<script>
+    let products = [
+        { name: "Pizza Mussarela", price: 40.00 },
+        { name: "Pizza Calabresa", price: 45.00 },
+        { name: "Pizza Portuguesa", price: 50.00 },
+        { name: "Pizza Quatro Queijos", price: 55.00 },
+    ];
+
+    let orders = [];
+
+    function loadProducts() {
+        const tbody = document.getElementById("product-table").querySelector("tbody");
+        tbody.innerHTML = "";
+        products.forEach((product, index) => {
+            const row = `
+                <tr>
+                    <td>${product.name}</td>
+                    <td>R$ ${product.price.toFixed(2)}</td>
+                    <td>
+                        <span class="edit-icon" onclick="editProduct(${index})">✏️</span>
+                        <button onclick="removeProduct(${index})">Remover</button>
+                    </td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        });
+    }
+
+    function addProduct() {
+        const name = document.getElementById("new-product-name").value;
+        const price = parseFloat(document.getElementById("new-product-price").value);
+
+        if (!name || price <= 0) {
+            alert("Preencha o nome e o preço corretamente.");
+            return;
+        }
+
+        products.push({ name, price });
+        loadProducts();
+        alert("Produto adicionado com sucesso!");
+        document.getElementById("new-product-name").value = "";
+        document.getElementById("new-product-price").value = "";
+    }
+
+    function removeProduct(index) {
+        if (confirm("Tem certeza que deseja remover este produto?")) {
+            products.splice(index, 1);
+            loadProducts();
+        }
+    }
+
+    function editProduct(index) {
+        const newName = prompt("Novo nome do produto:", products[index].name);
+        const newPrice = parseFloat(prompt("Novo preço do produto:", products[index].price));
+
+        if (!newName || newPrice <= 0) {
+            alert("Preencha os campos corretamente.");
+            return;
+        }
+
+        products[index] = { name: newName, price: newPrice };
+        loadProducts();
+    }
+
+    function addOrder(productIndex) {
+        const product = products[productIndex];
+        const quantity = parseInt(prompt("Digite a quantidade:", "1"));
+        const paymentMethod = prompt("Forma de pagamento (Pix, Cartão de Crédito, Cartão de Débito, Dinheiro):", "Dinheiro");
+
+        if (quantity <= 0 || !paymentMethod) {
+            alert("Preencha os campos corretamente.");
+            return;
+        }
+
+        orders.push({
+            name: product.name,
+            quantity,
+            total: product.price * quantity,
+            paymentMethod,
+            status: "pending",
+        });
+
+        updateOrdersTable();
+    }
+
+    function updateOrdersTable() {
+        const tbody = document.getElementById("orders-table").querySelector("tbody");
+        tbody.innerHTML = "";
+        orders.forEach((order, index) => {
+            const row = `
+                <tr class="${order.status === "pending" ? "pending" : "paid"}">
+                    <td>${order.name}</td>
+                    <td>${order.quantity}</td>
+                    <td>R$ ${order.total.toFixed(2)}</td>
+                    <td>${order.paymentMethod}</td>
+                    <td>${order.status === "pending" ? "Pendente" : "Pago"}</td>
+                    <td>
+                        <button onclick="markAsPaid(${index})">Pagar</button>
+                        <button onclick="removeOrder(${index})">Remover</button>
+                    </td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        });
+    }
+
+    function markAsPaid(index) {
+        orders[index].status = "paid";
+        updateOrdersTable();
+    }
+
+    function removeOrder(index) {
+        orders.splice(index, 1);
+        updateOrdersTable();
+    }
+
+    document.addEventListener("DOMContentLoaded", loadProducts);
+</script>
+
+</body>
+</html>
