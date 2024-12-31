@@ -14,12 +14,12 @@
             color: #000;
         }
         header {
-            background-color: #a42828; /* Vermelho */
+            background-color: #a42828;
             padding: 10px;
             text-align: center;
         }
         nav {
-            background-color: #080868; /* Azul */
+            background-color: #080868;
             padding: 10px;
             text-align: center;
         }
@@ -36,7 +36,7 @@
             padding: 20px;
         }
         .container {
-            background-color: #f9f9f9; /* Fundo suave para o formulário */
+            background-color: #f9f9f9;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@
         }
         .container h2 {
             text-align: center;
-            color: #080868; /* Título em harmonia com o tema */
+            color: #080868;
             margin-bottom: 20px;
         }
         .input-field {
@@ -58,7 +58,7 @@
             font-size: 16px;
         }
         .btn {
-            background-color: #28a745; /* Verde no estilo do sistema */
+            background-color: #28a745;
             color: white;
             padding: 12px;
             border: none;
@@ -68,7 +68,7 @@
             width: 100%;
         }
         .btn:hover {
-            background-color: #218838; /* Verde escuro ao passar o mouse */
+            background-color: #218838;
         }
         label {
             font-weight: bold;
@@ -76,7 +76,7 @@
             margin-bottom: 5px;
         }
         footer {
-            background-color: #a42828; /* Vermelho */
+            background-color: #a42828;
             padding: 10px;
             text-align: center;
         }
@@ -89,7 +89,16 @@
             margin-right: 10px;
         }
 
-    </style>kc
+        .linha-colorida {
+        color: #f9f9f9;
+      }
+      header h1 {
+            color: #fff;
+            font-size: 36px;
+            margin: 0;
+        }
+
+    </style>
 </head>
 <body>
 <header>
@@ -107,39 +116,33 @@
     <div class="container">
         <h2>Cadastro de Usuário</h2>
         <form action="#" method="POST">
-            <!-- Nome de usuário -->
             <label for="username">Nome de usuário</label>
             <input type="text" id="username" name="username" class="input-field" placeholder="Digite seu nome de usuário" required>
 
-            <!-- E-mail -->
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" class="input-field" placeholder="Digite seu e-mail" required>
 
-            <!-- Senha -->
             <label for="password">Senha</label>
             <input type="password" id="password" name="password" class="input-field" placeholder="Digite sua senha" required>
 
-            <!-- Confirmar Senha -->
             <label for="confirm_password">Confirme sua senha</label>
             <input type="password" id="confirm_password" name="confirm_password" class="input-field" placeholder="Confirme sua senha" required>
 
-            <!-- Botão de cadastro -->
             <button type="submit" class="btn">Cadastrar-se</button>
         </form>
     </div>
 </main>
 <footer>
     <div class="social-icons">
-        <!-- Aqui estão os ícones das redes sociais -->
         <img src="imagens/tiktok.png" alt="Ícone do TikTok">
         <img src="imagens/instagram.jpg" alt="Ícone do Instagram">
         <img src="imagens/facebook.jpg" alt="Ícone do Facebook">
         <img src="imagens/youtube.jpg" alt="Ícone do YouTube">
     </div>
-    <p>Serviço disponível nas áreas de entrega Casa Grande Pizzaria Artesanal, todos os dias, de acordo com o horário de funcionamento de cada loja. A Pizzaria Coma Bem se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. Imagens meramente ilustrativas. Em caso de dúvidas, consulte nosso SAC: <a href="email:relacionamentopizzaria@gmail.com">relacionamentopizzaria@gmail.com</a>.</p>
-    <p>Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.</p>
-    <p>Casa Grande Pizzaria Artesanal, Av. dos Estudantes, 290 - Bloco 2 , Góias/GO</p>
-    <p>S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: <a href="email:casagrandepizzariaartesanal@gmail.com.br">casagrandepizzariaartesanal@gmail.com.br</a></p>
+    <p class="linha-colorida">Serviço disponível nas áreas de entrega Casa Grande Pizzaria Artesanal, todos os dias, de acordo com o horário de funcionamento de cada loja. A Pizzaria Coma Bem se reserva no direito de alterar ou encerrar as ofertas sem aviso prévio. Todas as promoções expostas não são cumulativas entre si ou com outras promoções e descontos. Cobramos taxa de entrega. Todos os nossos produtos CONTÉM GLÚTEN. Alérgicos: todos os nossos produtos contém ou podem conter traços de Trigo, Ovos, Leite e Soja. Imagens meramente ilustrativas. Em caso de dúvidas, consulte nosso SAC: <a href="email:relacionamentopizzaria@gmail.com">relacionamentopizzaria@gmail.com</a>.</p>
+    <p class="linha-colorida">Preços "a partir de" podem sofrer pequenas variações de acordo com a região da loja. Confirme o preço no carrinho de compras antes de confirmar seu pedido.</p>
+    <p class="linha-colorida">Casa Grande Pizzaria Artesanal, Av. dos Estudantes, 290 - Bloco 2 , Góias/GO</p>
+    <p class="linha-colorida">S.A.C: Dúvidas, reclamações, sugestões e / ou elogios envie um e-mail para: <a href="email:casagrandepizzariaartesanal@gmail.com.br">casagrandepizzariaartesanal@gmail.com.br</a></p>
 </footer>
 </body>
 </html>
